@@ -7,7 +7,7 @@ export default function Home() {
         <div className="fixed top-0 left-0 w-full h-2/6 overflow-hidden -z-10">
           <Image src="/about.jpg" alt="Hero Image" width={600} height={400} className="absolute -top-2/6" />
         </div>
-        <div className=" h-full flex flex-col justify-end items-start gap-4 p-8 -translate-y-1/6">
+        <div className=" h-full flex flex-col justify-end items-start gap-4 p-8 -translate-y-3/12">
           <h1 className="text-7xl font-bold text-text-main font-heading">
           MAGOMY
         </h1>
