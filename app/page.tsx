@@ -5,7 +5,7 @@ export default function Home() {
       <main className="h-screen w-full flex flex-col md:flex-row relative">
         
         
-        <div className=" h-full flex flex-col justify-end items-start gap-4 p-8 -translate-y-3/12 md:translate-y-0 md:w-1/2 md:justify-center">
+        <div className=" h-full flex flex-col justify-end items-start gap-4 p-8 -translate-y-3/12 md:translate-y-0 md:w-1/2 md:justify-center xl:pl-20">
           <h1 className="text-7xl md:text-9xl font-bold text-text-main font-heading">
           MAGOMY
         </h1>
