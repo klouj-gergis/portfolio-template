@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="h-[80vh] bg-white/10   w-full flex flex-col md:flex-row relative justify-end border-b border-text-secondary">
+    <section className="h-[80dvh] bg-white/10   w-full flex flex-col md:flex-row relative justify-end border-b border-text-secondary">
       <div className=" h-fit lg:h-full  flex flex-col justify-start items-start gap-4 p-8 md:w-1/2 md:justify-center xl:pl-20">
           <h1 className="text-5xl font-bold md:text-9xl  text-text-main font-heading">
           MAGOMY
