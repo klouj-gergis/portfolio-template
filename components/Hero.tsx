@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="h-[80dvh] bg-white/10   w-full flex flex-col md:flex-row relative justify-end border-b border-text-secondary">
-      <div className=" h-fit lg:h-full  flex flex-col justify-start items-start gap-4 p-8 md:w-1/2 md:justify-center xl:pl-20">
+    <section className="h-[90vh]   w-full flex flex-col md:flex-row justify-end border-b border-text-secondary ">
+      <div className=" h-8/12 lg:h-full bg-background  flex flex-col justify-center items-start gap-4 p-8 md:w-1/2 md:justify-center xl:pl-20">
           <h1 className="text-5xl font-bold md:text-9xl  text-text-main font-heading">
           MAGOMY
         </h1>
@@ -15,7 +15,7 @@ export default function Hero() {
         </p>
         <button className="py-2 px-5 bg-cards border border-accent hover:bg-accent hover:text-black ease-in-out duration-200 cursor-pointer">Let's Talk</button>
         </div>
-        <div className="fixed md:relative top-0 left-0 w-full h-2/6 md:full overflow-hidden -z-10 md:z-0 md:h-full md:w-1/2">
+        <div className="fixed md:relative top-0 left-0 w-full h-2/6 md:h-full overflow-hidden -z-10 md:z-0 md:h-full md:w-1/2">
           <Image src="/hero.jpg" alt="Hero Image" width={600} height={400} loading="eager" className="absolute md:relative -top-2/6 md:-top-1/6 w-full" />
         </div>
     </section>
