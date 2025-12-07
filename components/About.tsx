@@ -3,7 +3,7 @@ import StatusCard from "./StatusCard"
 
 export default function About() {
   return (
-    <section className="flex flex-col justify-end pb-30 gap-8 md:gap-16 p-8 md:p-16 h-screen bg-background">
+    <section className="flex flex-col justify-end pb-30 gap-8 md:gap-16 px-8 lg:px-16 h-screen bg-background -mt-20 lg:mt-0">
         
       <div className="w-full md:w-1/2 flex flex-col gap-4">
         <h1 className="text-6xl text-accent font-heading">About Me</h1>
