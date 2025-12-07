@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from 'next/font/google';
 import "./globals.css";
+import Image from "next/image";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,6 +31,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${bebas.variable} antialiased bg-background`}
       >
+        <div className="fixed md:relative top-0 left-0 w-full h-2/6 md:full overflow-hidden -z-10 md:z-0 md:h-full md:w-1/2">
+          <Image src="/hero.jpg" alt="Hero Image" width={600} height={400} loading="eager" className="absolute md:relative -top-2/6 md:-top-1/6 w-full" />
+        </div>
         {children}
       </body>
     </html>
