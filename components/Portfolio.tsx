@@ -15,7 +15,7 @@ const Portfolio = () => {
   return (
     <section id="projects" className="w-full bg-background p-10">
       <h2 className="text-4xl text-accent font-bold mb-10 text-center">Projects Section</h2>
-      <div ref={container} className="w-full min-h-[70vh] lg:min-h-screen py-20 flex flex-col items-center justify-center">
+      <div ref={container} className="w-full min-h-[70vh] lg:min-h-screen flex flex-col items-center justify-center">
       {
         projects.map((project, index) => {
           const targetScale = 1 - ((projects.length - index) * 0.05);
