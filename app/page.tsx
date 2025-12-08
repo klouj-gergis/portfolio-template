@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Line from "@/components/Line";
 import Portfolio from "@/components/Portfolio";
 
 
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <About />
         <Portfolio />
+        <Line />
       </main>
   );
 } 
