@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Portfolio from "@/components/Portfolio";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="w-full  flex flex-col relative bg-background -z-20">
         <Hero />
         <About />
+        <Portfolio />
       </main>
   );
 } 
