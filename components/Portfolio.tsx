@@ -13,7 +13,7 @@ const Portfolio = () => {
   })
 
   return (
-    <section id="projects" className="w-full min-h-screen flex flex-col items-center justify-center p-10 bg-background">
+    <section id="projects" className="w-full min-h-[70vh] flex flex-col items-center justify-center p-10 bg-background border-b">
       <h2 className="text-4xl text-accent font-bold mb-10">Projects Section</h2>
       <div ref={container} className="w-full flex flex-col items-center justify-center">
       {
