@@ -27,7 +27,7 @@ export default function Contact() {
           </div>
         )
       }
-      <div className="w-full lg:w-6/12 lg:pl-30">
+      <div className="w-full lg:w-6/12 lg:pl-30 px-5">
       <h2 className="text-3xl font-bold text-primary text-center my-5">Contact Me</h2>
       <form className="flex flex-col gap-4">
         <label>
