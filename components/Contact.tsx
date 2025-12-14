@@ -40,7 +40,7 @@ export default function Contact() {
             </ul>
           </div>
         )}
-        <div className="w-full lg:w-6/12 lg:pl-30 p">
+        <div className="w-full lg:w-6/12 lg:pl-30 p-5">
           <h2 className="text-3xl font-bold text-primary text-center my-5">
             Contact Me
           </h2>
