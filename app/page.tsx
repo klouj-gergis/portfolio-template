@@ -6,7 +6,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-      <main className="w-full  flex flex-col relative bg-background -z-20">
+      <main className="w-full  flex flex-col relative bg-background">
         <Hero />
         <About />
         <Portfolio />
