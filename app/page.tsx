@@ -2,6 +2,8 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
+import TestimonialsSection from "@/components/TestimonialsSection"
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -10,7 +12,9 @@ export default function Home() {
         <Hero />
         <About />
         <Portfolio />
+        <TestimonialsSection />
         <Contact />
+        <Footer />
       </main>
   );
 } 

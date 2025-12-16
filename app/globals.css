@@ -15,6 +15,16 @@
   --color-accent: #00FFD1;
   --font-body: var(--font-inter);
   --font-heading: var(--font-bebas);
+  --animate-scroll: scroll 25s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0)
+    }
+    100% {
+      transform: translateX(-50%)
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

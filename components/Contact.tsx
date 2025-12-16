@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section className="bg-background min-h-screen rounded-xl shadow-md p-6 w-full flex justify-center items-center relative z-0 py-20">
       <div className="bg-white rounded-xl shadow-md lg:p-6 w-full lg:w-9/12 flex gap-5 flex-col lg:flex-row lg:justify-between items-center  mx-auto my-10">
-        {contactMethodes && (
+        
           <div className="w-full lg:w-6/12 flex flex-col">
             <Image
               alt="contact section vector image"
@@ -16,30 +16,7 @@ export default function Contact() {
               width={600}
               height={50}
             />
-            <ul className="flex h-full items-center justify-center gap-5">
-              {contactMethodes.map((method) => (
-                <li
-                  key={method.title}
-                  className="bg-foreground border border-primary hover:border-0 p-3 rounded"
-                >
-                  <Link
-                    href={method.link}
-                    className="flex flex-col items-center gap-2"
-                  >
-                    <SimpleIconC
-                      icon={method.icon}
-                      size={30}
-                      color={method.color}
-                    />
-                    <span className="text-primary  font-heading text-xl">
-                      {method.title.toUpperCase()}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
-        )}
         <div className="w-full lg:w-6/12 lg:pl-30 p-5">
           <h2 className="text-3xl font-bold text-primary text-center my-5">
             Contact Me

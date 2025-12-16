@@ -32,6 +32,45 @@ export const projects = [
 ]
 
 
+export const testimonials = [
+  {
+    name: "Alex Morgan",
+    role: "YouTube Content Creator",
+    image: "/hero.jpg",
+    quote:
+      "Working with this editor completely changed the quality of my content. The pacing, storytelling, and attention to detail are on another level."
+  },
+  {
+    name: "Sarah Williams",
+    role: "Brand Manager",
+    image: "/hero.jpg",
+    quote:
+      "Professional, fast, and incredibly creative. Every project was delivered on time and exceeded our expectations."
+  },
+  {
+    name: "Daniel Cruz",
+    role: "Music Artist",
+    image: "/hero.jpg",
+    quote:
+      "The final video captured the exact emotion I wanted. Clean edits, great color grading, and smooth communication throughout the process."
+  },
+  {
+    name: "Lina Hassan",
+    role: "Social Media Creator",
+    image: "/hero.jpg",
+    quote:
+      "Amazing experience from start to finish. The edits feel cinematic and engaging, and my audience noticed the difference immediately."
+  }
+];
+
+export type TestimonialType = {
+  name: string,
+  role: string,
+  image: string,
+  quote: string
+}
+
+
 
 export const contactMethodes =  [
   {
