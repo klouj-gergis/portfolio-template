@@ -23,7 +23,7 @@ export default async function page({ params }: { params: { id: string } }) {
             otherProjects.map((project, i) => (
               <li key={i} className="group w-full ">
                 <Link href={`/projects/${project.id}`} className="flex">
-                <div className="w-5/12 h-24 overflow-hidden rounded-xl lg:h-40 lg:w-full">
+                <div className="w-5/12 h-24 overflow-hidden rounded-xl lg:h-40 lg:w-full relative">
                   <Image width={350} height={80} src={project.image} alt={project.title} />
                 
                 <div className="hidden absolute top-0 left-0 group-hover:flex justify-center items-center w-full h-full bg-black/30">
