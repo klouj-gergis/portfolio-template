@@ -1,45 +1,52 @@
 import VideoLength from "@/components/VideoLength";
-import { projects, ProjectType } from "@/lib/data"
-import Image from "next/image"
-import Link from "next/link"
+import VideoReview from "@/components/VideoReview";
+import { projects, ProjectType } from "@/lib/data";
+import Image from "next/image";
+import Link from "next/link";
 
 export default async function page({ params }: { params: { id: string } }) {
   const { id } = await params;
-  const project = projects[Number(id) - 1]
-  const otherProjects = projects.filter((project) => project.id !== projects[Number(id) - 1].id )
+  const project = projects[Number(id) - 1];
+  const otherProjects = projects.filter(
+    (project) => project.id !== projects[Number(id) - 1].id
+  );
   return (
     <main className="p-5 flex flex-col lg:flex-row">
       <div className=" p-5 sticky bottom-0 h-max">
-        <video src={project.assetLink} controls className="w-full rounded-2xl" />
-        <div className="py-4 pr-5 pl-2 flex flex-col gap-5" >
+        <VideoReview assetLink={project.assetLink} />
+        <div className="py-4 pr-5 pl-2 flex flex-col gap-5">
           <h1 className="text-4xl font-bold">{project.title.toUpperCase()}</h1>
           <p className="text-text-secondary">{project.description}</p>
         </div>
-      
       </div>
       <div className="w-full lg:w-1/3 pt-4">
         <ul className="w-full flex flex-col items-center gap-2 p-2">
-          {
-            otherProjects.map((project, i) => (
-              <li key={i} className="group w-full ">
-                <Link href={`/projects/${project.id}`} className="flex">
+          {otherProjects.map((project, i) => (
+            <li key={i} className="group w-full ">
+              <Link href={`/projects/${project.id}`} className="flex">
                 <div className="w-5/12 h-24 overflow-hidden rounded-xl lg:h-40 lg:w-full relative">
-                  <Image width={350} height={80} src={project.image} alt={project.title} />
-                
-                <div className="hidden absolute top-0 left-0 group-hover:flex justify-center items-center w-full h-full bg-black/30">
-                  <h3 className="text-4xl text-center font-semibold">{project.title.toUpperCase()}</h3>
-                </div>
+                  <Image
+                    width={350}
+                    height={80}
+                    src={project.image}
+                    alt={project.title}
+                  />
+
+                  <div className="hidden absolute top-0 left-0 group-hover:flex justify-center items-center w-full h-full bg-black/30">
+                    <h3 className="text-4xl text-center font-semibold">
+                      {project.title.toUpperCase()}
+                    </h3>
+                  </div>
                 </div>
                 <div className="lg:hidden p-2 flex flex-col justify-between">
                   <h3 className="text-xl">{project.title.toUpperCase()}</h3>
                   <VideoLength src={project.assetLink} />
                 </div>
-                </Link>
-              </li>
-            ))
-          }
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </main>
-  )
+  );
 }
