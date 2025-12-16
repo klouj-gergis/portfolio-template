@@ -10,26 +10,42 @@ export const statusData = [
 
 export const projects = [
   {
+    id:1,
     title: 'first project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: './land-o-lakes-inc-DWv3vEGKW1E-unsplash.jpg'
+    image: '/hero.jpg',
+    assetLink: "/portfolio_placeholder.mp4"
   },
   {
+    id:2,
     title: 'second project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: './land-o-lakes-inc-UnSFmJCCrW0-unsplash.jpg'
+    image: '/hero.jpg',
+    assetLink: "/portfolio_placeholder.mp4"
   },
   {
+    id:3,
     title: 'third project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: './luigi-ritchie-3ZAKE8qVTK0-unsplash.jpg'
+    image: '/hero.jpg',
+    assetLink: "/portfolio_placeholder.mp4"
   },
   {
+    id:4,
     title: 'fourth project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: './philippe-bontemps-kZPxXgwOETQ-unsplash.jpg'
+    image: '/hero.jpg',
+    assetLink: "/portfolio_placeholder.mp4"
   }
 ]
+
+export type ProjectType = {
+  id: number,
+  title: string,
+  description: string,
+  image: string,
+  assetLink: string
+}
 
 
 export const testimonials = [
