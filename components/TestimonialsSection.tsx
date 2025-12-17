@@ -3,8 +3,8 @@ import TestimonialCard from "@/components/TestimonialCard"
 
 export default function TestimonialsSection() {
   return (
-    <section className="w-full h-screen lg:h-52 lg:flex items-center border-y lg:mt-20 overflow-hidden relative">
-      <ul className="flex flex-wrap lg:flex h-max w-max lg:animate-scroll lg:hover:[animation-play-state:paused]  relative">
+    <section className="w-full h-screen lg:h-52 lg:flex items-center border-y lg:mt-20 lg:overflow-hidden relative">
+      <ul className="flex flex-col h-full items-center justify-center gap-4 lg:flex-row lg:h-max w-max lg:animate-scroll lg:hover:[animation-play-state:paused]  relative">
         
         {/* FIRST TRACK */}
        
