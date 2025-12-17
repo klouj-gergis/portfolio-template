@@ -14,7 +14,7 @@ export default function TestimonialCard({ name, role, image, quote}: Testimonial
         </div>
         
       </div>
-      <div className="w-full max-w-[20rem] lg:max-w-96 p-3 px-5">
+      <div className="w-full max-w-86 lg:max-w-96 p-3 px-5">
         <p>{quote}</p>
         
       </div>
