@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
         <p className="text-xl font-body text-text-secondary">
           Helping creators turn raw footage into cinematic storytelling.
         </p>
-        <button className="py-2 px-5 bg-cards border border-accent hover:bg-accent hover:text-black ease-in-out duration-200 cursor-pointer">Let's Talk</button>
+        <Link href="#contact" className="py-2 px-5 bg-cards border border-accent hover:bg-accent hover:text-black ease-in-out duration-200 cursor-pointer">Let's Talk</Link>
         </div>
         
     </section>

@@ -13,28 +13,28 @@ export const projects = [
     id:1,
     title: 'first project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: '/hero.jpg',
+    image: '/project-placeholder.jpg',
     assetLink: "/portfolio_placeholder.mp4"
   },
   {
     id:2,
     title: 'second project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: '/hero.jpg',
+    image: '/project-placeholder.jpg',
     assetLink: "/portfolio_placeholder.mp4"
   },
   {
     id:3,
     title: 'third project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: '/hero.jpg',
+    image: '/project-placeholder.jpg',
     assetLink: "/portfolio_placeholder.mp4"
   },
   {
     id:4,
     title: 'fourth project',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem doloremque pariatur in. Suscipit asperiores officiis cum fuga autem, ad nam dolor neque. Perferendis, sit soluta? Blanditiis vitae distinctio aperiam?",
-    image: '/hero.jpg',
+    image: '/project-placeholder.jpg',
     assetLink: "/portfolio_placeholder.mp4"
   }
 ]

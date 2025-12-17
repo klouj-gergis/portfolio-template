@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section className="bg-background min-h-screen rounded-xl shadow-md p-6 w-full flex justify-center items-center relative z-0 py-20">
+    <section id="contact" className="bg-background min-h-screen rounded-xl shadow-md p-6 w-full flex justify-center items-center relative z-0 py-20">
       <div className="bg-white rounded-xl shadow-md lg:p-6 w-full lg:w-9/12 flex gap-5 flex-col lg:flex-row lg:justify-between items-center  mx-auto my-10">
         
           <div className="w-full lg:w-6/12 flex flex-col">
