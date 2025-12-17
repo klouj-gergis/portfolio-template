@@ -3,14 +3,20 @@ import Image from "next/image"
 
 export default function TestimonialCard({ name, role, image, quote}: TestimonialType) {
   return (
-    <div className="shrink-0 flex gap-2 items-start rounded bg-foreground p-2 text-primary">
-      <div className="w-15 h-15 rounded-full overflow-hidden">
-        <Image width={80} height={80}  className="rounded-full object-cover h-full " src={image} alt="client testimonial image" />
+    <div className="flex flex-col items-start bg-primary rounded-2xl w-max p-3">
+      <div className="flex items-center gap-3">
+        <div className="w-max h-15 overflow-hidden rounded-full">
+          <Image src={image} height={60} width={60} alt="testimonial image" />
+        </div>
+        <div>
+          <h3 className="text-2xl font-semibold text-accent">{name.toUpperCase()}</h3>
+          <span className="text-text-secondary">{role.toUpperCase()}</span>
+        </div>
+        
       </div>
-      <div className="w-96 py-2 flex flex-col gap-2">
-        <h3 className="text-3xl font-bold font-body">{name}</h3>
-        <p className="pl-2 font-semibold">{quote}</p>
-        <span className="text-end block font-semibold pr-2">{role}</span>
+      <div className="w-full max-w-96 p-3 px-5">
+        <p>{quote}</p>
+        
       </div>
     </div>
   )
