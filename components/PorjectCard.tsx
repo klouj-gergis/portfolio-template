@@ -40,7 +40,7 @@ const ProjectCard = ({title, assetLink, progress, range, targetScale, image, i, 
     {/* mobile size */}
      <div className="w-full h-max lg:h-screen  lg:hidden flex flex-col items-center justify-center lg:sticky lg:top-0  ">
       
-    <motion.div className={`w-full h-5/12 flex flex-col items-center justify-center text-white  relative gap-3 bg-cards rounded-lg pb-3`}>
+    <motion.div className={`w-full h-5/12 flex flex-col items-center justify-center text-white  relative gap-3 bg-primary rounded-lg pb-3 border border-text-secondary`}>
       <img src={image} alt={title} className="z-0 w-full rounded-lg border " />
       <div className="w-full px-3 flex justify-between items-center">
         <div>
