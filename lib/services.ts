@@ -11,3 +11,12 @@ export function formatDuration(seconds: number) {
 
   return `${m}:${s.toString().padStart(2, "0")}`
 }
+
+
+export function capitalizeFirstLetter(string: string){
+  const strings = string.split('.')
+  const capitalizedStrs = strings.map((str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1) 
+  })
+  return capitalizedStrs.join(' ')
+}
