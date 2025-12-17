@@ -14,7 +14,7 @@ const Portfolio = () => {
 
   return (
     <section id="projects" className="w-full min-h-screen bg-background p-10">
-      <h2 className="text-4xl h-2/12 text-accent font-bold mb-10 text-center">Projects Section</h2>
+      <h2 className="text-5xl h-2/12 text-accent font-bold mb-10 text-center font-heading tracking-wider">My Work</h2>
       <div ref={container} className="w-full min-h-5/12 lg:min-h-screen flex flex-col items-center justify-center gap-5 lg:gap-0">
       {
         projects.map((project, index) => {
