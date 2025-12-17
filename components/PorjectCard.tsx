@@ -40,14 +40,13 @@ const ProjectCard = ({title, assetLink, progress, range, targetScale, image, i, 
     {/* mobile size */}
      <div className="w-full h-max lg:h-screen  lg:hidden flex flex-col items-center justify-center lg:sticky lg:top-0  ">
       
-    <motion.div className={`w-full h-5/12 flex flex-col items-center justify-center text-white  relative gap-3`}>
+    <motion.div className={`w-full h-5/12 flex flex-col items-center justify-center text-white  relative gap-3 bg-primary rounded-lg`}>
       <img src={image} alt={title} className="z-0 w-full rounded-lg border " />
       <div className="w-full px-3 flex justify-between items-center">
         <div>
           <h2 className="text-2xl text-accent font-bold">{capTitle}</h2>
-        <VideoLength src={assetLink} />
         </div>
-        <Link href={`/projects/${id}`} className="px-2 py-1 bg-primary rounded-md text-text-main font-semibold">View</Link>
+        <Link href={`/projects/${id}`} className="px-2 py-1 bg-foreground rounded-md text-primary font-semibold">View</Link>
       </div>
     </motion.div>
     </div>
