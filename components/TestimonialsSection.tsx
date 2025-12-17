@@ -4,7 +4,7 @@ import TestimonialCard from "@/components/TestimonialCard"
 export default function TestimonialsSection() {
   return (
     <section className=" border-y flex flex-col items-center py-5 lg:gap-4">
-      <h2 className="text-xl lg:text-5xl text-accent font-semibold font-heading lg:tracking-wider">What Our Clients Say</h2>
+      <h2 className="text-5xl lg:text-5xl text-accent font-semibold font-heading lg:tracking-wider">What Our Clients Say</h2>
       <div className="w-full py-10 lg:h-52 lg:flex lg:items-center">
         {/* MOBILE */}
   <ul className="flex flex-col gap-4 px-4 lg:hidden">
