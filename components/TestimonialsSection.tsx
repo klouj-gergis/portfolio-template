@@ -5,15 +5,11 @@ export default function TestimonialsSection() {
   return (
     <section className=" border-y flex flex-col items-center py-5 lg:gap-4">
       <h2 className="text-5xl lg:text-5xl text-accent font-semibold font-heading lg:tracking-wider">What Our Clients Say</h2>
-      <div className="w-full py-10 lg:h-52 lg:flex lg:items-center">
+      <div className="w-full px-5 lg:px-0 py-10 lg:h-52 flex lg:flex-col lg:items-center">
         {/* MOBILE */}
-  <ul className="w-full flex flex-col justify-center items-center gap-4 lg:hidden">
     {testimonials.map((t, i) => (
-      <li key={i}>
-        <TestimonialCard {...t} />
-      </li>
+        <TestimonialCard {...t} className="lg:hidden"/>
     ))}
-  </ul>
 
   {/* DESKTOP MARQUEE */}
   <div className="relative hidden lg:block w-full overflow-hidden">
