@@ -5,7 +5,7 @@ export default function TestimonialsSection() {
   return (
     <section className=" border-y flex flex-col items-center py-5 lg:gap-4">
       <h2 className="text-5xl lg:text-5xl text-accent font-semibold font-heading lg:tracking-wider">What Our Clients Say</h2>
-      <div className="w-full px-5 lg:px-0 py-10 lg:h-52 flex lg:flex-col lg:items-center">
+      <div className="w-full px-5 lg:px-0 py-10 lg:h-52 flex lg:flex-col items-center">
         {/* MOBILE */}
     {testimonials.map((t, i) => (
         <TestimonialCard {...t} className="lg:hidden"/>
