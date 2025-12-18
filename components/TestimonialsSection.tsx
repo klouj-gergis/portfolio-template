@@ -7,10 +7,11 @@ export default function TestimonialsSection() {
       <h2 className="text-5xl lg:text-5xl text-accent font-semibold font-heading lg:tracking-wider">What Our Clients Say</h2>
       <div className="w-full px-5 lg:px-0 py-10 lg:h-52 flex lg:flex-col items-center">
         {/* MOBILE */}
-    {testimonials.map((t, i) => (
-        <TestimonialCard {...t} className="lg:hidden"/>
-    ))}
-
+        <div className="w-full lg:hidden flex flex-col items-center">
+          {testimonials.map((t, i) => (
+             <TestimonialCard {...t}/>
+          ))}
+        </div>
   {/* DESKTOP MARQUEE */}
   <div className="relative hidden lg:block w-full overflow-hidden">
     
