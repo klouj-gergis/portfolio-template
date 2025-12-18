@@ -7,7 +7,7 @@ export default function TestimonialsSection() {
       <h2 className="text-5xl lg:text-5xl text-accent font-semibold font-heading lg:tracking-wider">What Our Clients Say</h2>
       <div className="w-full py-10 lg:h-52 lg:flex lg:items-center">
         {/* MOBILE */}
-  <ul className="flex flex-col bg-white justify-center items-center gap-4 lg:hidden">
+  <ul className="w-full flex flex-col justify-center items-center gap-4 lg:hidden">
     {testimonials.map((t, i) => (
       <li key={i}>
         <TestimonialCard {...t} />
