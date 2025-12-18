@@ -7,9 +7,9 @@ export default function TestimonialsSection() {
       <h2 className="text-5xl lg:text-5xl text-accent font-semibold font-heading lg:tracking-wider">What Our Clients Say</h2>
       <div className="w-full px-5 lg:px-0 py-10 lg:h-52 flex lg:flex-col items-center">
         {/* MOBILE */}
-        <div className="w-full lg:hidden flex flex-col gap-4 items-center">
+        <div className="w-full lg:hidden flex flex-col gap-4 items-center px-2">
           {testimonials.map((t, i) => (
-             <TestimonialCard {...t}/>
+             <TestimonialCard key={i} {...t}/>
           ))}
         </div>
   {/* DESKTOP MARQUEE */}
