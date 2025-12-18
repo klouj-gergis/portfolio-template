@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function TestimonialCard({ name, role, image, quote}: TestimonialType) {
   return (
-    <div className="flex flex-col items-start bg-primary rounded-2xl w-max p-3">
+    <div className=" w-11/12 flex flex-col items-start bg-primary rounded-2xl p-3">
       <div className="flex items-center gap-3">
         <div className="w-max h-15 overflow-hidden rounded-full">
           <Image src={image} height={60} width={60} alt="testimonial image" />
