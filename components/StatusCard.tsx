@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
 
 
-export default function StatusCard({ title, start = 0, status = 100, duration = 2000 }: { title: string; start: number, status: number, duration?: number }) {
+export default function StatusCard({ title, start = 0, status = 100, duration = 2000 }: { title: string; start?: number, status: number, duration?: number }) {
 
     const [value, setValue] = useState(start);
   const ref = useRef(start);
