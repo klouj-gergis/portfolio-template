@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
 
 
-export default function StatusCard({ title, start = 0, end = 100, duration = 2000 }: { title: string; start: number, end: number, duration?: number }) {
+export default function StatusCard({ title, start = 0, status = 100, duration = 2000 }: { title: string; start: number, status: number, duration?: number }) {
 
     const [value, setValue] = useState(start);
   const ref = useRef(start);
@@ -12,15 +12,15 @@ export default function StatusCard({ title, start = 0, end = 100, duration = 200
   // Watch the actual element
   const isInView = useInView(elRef, { once: false });
 
-  const counter = end / 200;
+  const counter = status / 200;
 
   const count = () => {
-    if (ref.current < end) {
+    if (ref.current < status) {
       const result = Math.ceil(ref.current + counter);
       setValue(result);
       ref.current = result;
 
-      setTimeout(count, duration / (end - start)); // continue
+      setTimeout(count, duration / (status - start)); // continue
     }
   };
 
