@@ -32,7 +32,7 @@ export default function StatusCard({ title, start = 0, status = 100, duration = 
 
       count();
     }
-  }, [isInView, start, end]);
+  }, [isInView, start, status]);
 
   return (
     <div ref={elRef} className="p-4 border rounded-lg bg-cards shadow-md flex flex-col items-center">
