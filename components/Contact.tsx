@@ -6,52 +6,12 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-background min-h-screen rounded-xl shadow-md p-6 w-full flex justify-center items-center relative z-0 py-20">
-      <div className="bg-white rounded-xl shadow-md lg:p-6 w-full lg:w-9/12 flex gap-5 flex-col lg:flex-row lg:justify-between items-center  mx-auto my-10">
-        
-          <div className="w-full lg:w-6/12 flex flex-col">
-            <Image
-              alt="contact section vector image"
-              src="/contact-vec.jpg"
-              width={600}
-              height={50}
-            />
-          </div>
-        <div className="w-full lg:w-6/12 lg:pl-30 p-5">
-          <h2 className="text-3xl font-bold text-primary text-center my-5">
-            Contact Me
-          </h2>
-          <form className="flex flex-col gap-4">
-            <input
-              type="text"
-              className="w-full bg-primary/20 text-primary font-semibold rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-foreground"
-              placeholder="Your Name"
-              required
-            />
-
-            <input
-              type="email"
-              className="w-full bg-primary/20 text-primary font-semibold rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-foreground"
-              placeholder="your@email.com"
-              required
-            />
-
-            <textarea
-              className="w-full bg-primary/20 text-primary font-semibold rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-foreground"
-              placeholder="Your message"
-              rows={4}
-              required
-            />
-
-            <button
-              type="submit"
-              className="bg-cards tracking-wider text-foreground py-2 px-6 rounded hover:bg-cards/90 cursor-pointer transition-colors font-bold lg:col-start-4"
-            >
-              Send
-            </button>
-          </form>
-        </div>
-      </div>
+    <section id="contact" className="bg-background  rounded-xl shadow-md p-6 w-full flex justify-center items-center relative z-0 py-20 flex-col">
+        <h2 className="text-4xl font-bold text-accent mb-4">Get in Touch</h2>
+        <p className="text-3xl w-4/6 text-text-main font-bold mb-8 text-center">Have an idea in mind or need a designer who actually understands your vision?
+I’d love to hear about your project and see how we can turn it into something impactful.
+Let’s talk and make it happen.</p>
+<a href="https://wa.me/201270281411" className="text-accent bg-primary p-3 rounded-md">let's wrok Together</a>
     </section>
   );
 }
