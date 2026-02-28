@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-      <main className="w-full  flex flex-col relative bg-background">
+      <main className="w-full  flex flex-col relative bg-gradient-to-tl from-fuchsia-900 via-violet-600 to-slate-50">
         <Hero />
         <About />
         <Portfolio />
