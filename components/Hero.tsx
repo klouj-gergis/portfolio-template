@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="h-[90vh] lg:h-screen   w-full flex flex-col md:flex-row justify-end border-b border-text-secondary relative bg-gradient-to-r from-slate-500 to-slate-800">
+    <section className="h-[90vh] lg:h-screen   w-full flex flex-col md:flex-row justify-end relative bg-gradient-to-r from-slate-500 to-slate-800">
       <div className="relative top-0 left-0 w-full h-2/6 md:h-full overflow-hidden z-0 md:z-0 md:w-1/2">
           <Image src="/hero.jpg" alt="Hero Image" width={600} height={400} loading="eager" className="absolute md:relative -top-2/6 md:-top-1/6 w-full" />
         </div>
