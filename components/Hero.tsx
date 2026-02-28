@@ -8,7 +8,7 @@ export default function Hero() {
           <Image src="/hero.jpg" alt="Hero Image" width={600} height={400} loading="eager" className="absolute md:relative -top-2/6 md:-top-1/6 w-full" />
         </div>
       <div className=" h-8/12 lg:h-full bg-background  flex flex-col justify-center items-start gap-4 p-8 md:w-1/2 md:justify-center xl:pl-20">
-          <h1 className="text-5xl font-bold md:text-9xl  text-text-main font-heading py-5 px-4 border-white/30 bg-white/10 backdrop-blur-[2px]">
+          <h1 className="text-5xl font-bold md:text-9xl  text-text-main font-heading border px-4 border-white/30 rounded-lg bg-white/5 backdrop-blur-[1px]">
           MAGOMY
         </h1>
         <h2 className="text-[3rem] md:text-8xl font-bold text-accent font-body -mt-4">
